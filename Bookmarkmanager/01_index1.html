@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&family=Tiny5&display=swap');
+        /* Element selector*/
+        div{
+            background-color: brown;
+        }
+        /*Class secector*/
+        .brown{
+            background-color: brown;
+        }
+        /* ID Selector */
+        #green{
+            background-color: green;
+        }
+        /* child selector */ /* In this case if a para or any text  is inside the another element then child selector will not work in that case decendent selector will work.*/
+        div > p{
+            color: aquamarine;
+            background-color: blue;
+        }
+        /* descendant secector */
+        div  p{
+            color: aquamarine;
+            background-color: blue;
+        }
+        /* universal secetor */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* pseudo Selector */
+        a:visited{
+            color: chartreuse;
+        }
+        a:link{
+            color: brown;
+        }
+        a:active{ /* a:active means when we click on the link ,Its background colour changes*/
+            background-color: blue;
+        }
+        a:hover{
+            background-color: black;
+        }
+        p:first-child{
+            background-color: crimson;
+
+
+            /*CLASS=2,css box model concept */
+
+        }
+        .box{
+            background-color: blue;
+        }
+        .box1{
+            color: chartreuse;
+            padding:10px ;
+            margin: 25px;
+            border: 2px solid red;
+            height: 200px;
+            box-sizing: border-box;
+        }
+        .box2{
+            color: darkorange;
+            padding:10px ;
+            margin: 25px;
+            border: 2px solid rgb(156, 38, 38);
+            height: 200px;
+            box-sizing: border-box;
+        }
+
+
+        /* <!--CLASS=3, fonts and text in CSS --> */
+        
+        
+
+        p{
+            
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-style: italic;
+            font-weight: bold;
+            text-decoration: underline;
+            font-size: larger;
+            line-height: 2;
+            letter-spacing: 0svw;
+            
+
+
+        }
+        h1{
+            font-family: monospace;
+        }
+        h2{
+            text-transform: capitalize;
+            text-decoration: underline;
+            text-decoration-color: aqua;
+            text-decoration-style: dashed;
+            text-decoration-thickness: 3px;
+            text-indent: 5px;
+            text-overflow: ellipsis;
+            text-align: center;
+        }
+
+        .Lorem{
+            border: 2px solid red;
+            width: 45px;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            word-break: break-all;
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <main class="one">
+        <p>I am a first child </p>
+        <p>I am a second child </p>
+    </main>
+    <div class="brown">
+        I am div
+        <article>
+            <p>I am a para inside div</p>
+        </article>
+    </div>
+    
+    <div id="green">
+        I am another div
+    </div>
+    <a href="https://www.google.com">Go to Google</a>
+    <a href="https://www.youtube.com">Go to youtube</a>
+
+    <!--CLASS=2, css box model concept -->
+
+    <div class="box box1">I am a box</div>
+    <div class="box box2">I am another box</div>
+
+    <!-- margin colapse is the concept that tells that In two boxes , the boxes has higher margin will applied to both the boxes  -->
+
+
+    <!--CLASS=3, fonts and text in CSS -->
+       <div>
+        <h1>Fonts</h1>
+        <h2>about fonts</h2>
+        <p>This is video on font</p>
+        <p class="Lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, qui praesentium accusamus iure veritatis eaque dignissimos consequatur quas nulla optio, facilis explicabo harum, quibusdam non laborum asperiores a consectetur reprehenderit.</p>
+       </div>
+
+</body>
+</html>
