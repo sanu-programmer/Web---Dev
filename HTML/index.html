@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Web Development html</title>
+    <link rel="stylesheet" href="style.css">  <!--this is link tab that is used to link html with css-->
+</head>
+<body>
+    <!--here are different type of headings that are used as per users need from h1 to h6 -->
+
+        <h1> My Bookmark- Sanu kumar using h1</h1>
+        <h2>Main BookmarkS- Sanu kumar using h2</h2>
+        <h3>Main BookmarkS- Sanu kumar using h3</h3>
+        <h4>Main BookmarkS- Sanu kumar using h4</h4>
+        <h5>Main BookmarkS- Sanu kumar using h5</h5>
+        <h6>Main BookmarkS- Sanu kumar using h6</h6>
+         
+        <!--this is paragraph tag used to write paraghaph or statementy and style="background colour is the attributes attched to it."-->
+
+        <p style="background-color: whitesmoke ;">Lorem ipsum dolor sit amet.</p>
+        <!--this is image tag used to insert it with differwnt heights -->
+       <img src="Akshay_Kumar.jpg" alt="Akshay_Kumar" height="150">
+
+
+        <!--here is the table tag , that is arranged starting from table head that contains
+        captions first and table row1 in which name designation and fav language is written
+        after that table body starts that includes sanu prog--and fav lang-- col sapn and row span is also used here
+        after that table footer start that ends with col span and row span-->
+        <table>
+            <thead>
+            <caption>Employee Details</caption>
+            <tr>
+                <th>Name</th>
+                <th>Designation</th>
+                <th>Fav Language</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Shivam kumar</td>
+                <td>programmer </td>
+                <td>java script</td>
+            </tr>
+            <tr>
+                <td colspan="2">Som</td>
+                <td rowspan="2">java </td>
+            </tr>
+            <tr>
+                <td colspan="2">Som</td>
+            </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Som</td>
+                    <td rowspan="2">java</td>
+                </tr>
+            </tfoot>
+        </table>
+         
+         <!--Here there are two types of lists unorded and orded list -->
+
+        <ul type="square">
+           <li>sanu</li>
+           <li>som</li>
+           <li>saurav</li>
+        </ul>
+        <ol type="A">
+            <li>sanu</li>
+            <li>som</li>
+            <li>saurav</li>
+         </ol>
+          
+         <!--Here is the form to apply for TA -->
+
+         <h1>Form to apply for web development course TA </h1>
+    <form action="post"> <!--generally action = post is used-->
+        <div> <!--here input tag with different type is used and label tag for same id is used-->
+            <label for="username" >Enter your username</label>
+            <input type="text" id="username" placeholder="Enter your username">
+        </div>
+
+        <div>
+            <input type="radio" id="male" name="gender" value="male" >
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+
+        <div>
+            <input type="checkbox" id="subscribe" name="subscribe" value="yes">
+            <label for="subscribe">Subscribe to Newsletter </label>
+        </div>
+
+        <div>
+            <label for="comment"> Enter your comment </label>
+            <br>  <!--here text area tag is used to enter long comments like paragraph-->
+            <textarea  id=name="comment" id="comment" cols="30" rows="10"></textarea>
+        </div>
+
+        <!--here select tag is used to select some input out of given -->
+
+        <div>
+            <select name="fruit" id="">
+                <option value="apple">Apple</option>
+                <option value="banana">banana</option>
+                <option value="cherry">cherry</option>
+            </select>
+        </div>
+    </form>
+
+          <h1>Inline and block element </h1>
+          <p>hey I am para </p>
+          <a href="http://www.google.com">Google</a>
+          <a href="https://jeemain.nta.ac.in/">NTA WEBSITE</a>
+
+          <!--here we understand id that unique identifier and classes that can be given to many tags-->
+
+          <h1> ID and classes </h1>
+          <div id="firstdiv" class="red big-yellow">first</div>
+          <div id="seconddiv" class="red big-yellow">second</div>
+          <span class="red"></span>
+
+          <!--here is audio and video tag used to insert video and audio on the website-->
+
+         <video src="ram song.mp4" controls height="300" ></video>
+         <br>
+         <VIDEO src="song1.mp4" controls height="300"></VIDEO>
+         <div>
+            <video src="song.mp4" controls height="300" ></video>
+         </div>
+         <div>
+            <video src="song1.mp4" controls height="300" ></video>
+         </div>
+         <audio src="dhago se bandha song.mp3" controls ></audio>
+         <br>
+
+         <svg height="200" width="">
+            <circle cx="50" r="60" stroke="red" stroke-width="5" />
+         </svg>
+
+         <!--here is i frame tag used to insert any other website on my website-->
+
+         <iframe src="https://www.sarkariresult.com/" weight="" height="1200"  ></iframe>
+         <!--here is entities tag which is used to show those letters that matches with some other tag-->
+         
+         &lt;p&gt;&lt;p&gt;
+         
+         <script src="script.js"></script>
+
+</body>
+</html>
